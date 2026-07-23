@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIRAGE — Т ПОЗИЦІЇ</title>
+    <title>ANCIENT — Т ПОЗИЦІЇ</title>
     <link rel="stylesheet" href="style.css">
     <style>
         .positions-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 350px));
+            justify-content: center;
             gap: 20px;
-            max-width: 1100px;
+            max-width: 850px;
             margin: 30px auto;
             padding: 0 15px;
         }
@@ -41,7 +42,7 @@
         }
 
         .pos-card-title {
-            padding: 14px;
+            padding: 12px;
             text-align: center;
             color: #ffffff;
             font-weight: bold;
@@ -51,6 +52,7 @@
             transition: color 0.3s ease;
         }
 
+        /* 💥 АНІМАЦІЯ ПРИ НАВЕДЕННІ */
         .pos-card:hover {
             border-color: #ff4655;
             transform: translateY(-5px);
@@ -69,36 +71,20 @@
 <body>
 
     <header>
-        <a href="side.html">← НАЗАД</a>
-        <h1>MIRAGE — Т ПОЗИЦІЇ</h1>
+        <a href="ancient.html">← НАЗАД</a>
+        <h1>ANCIENT — Т ПОЗИЦІЇ</h1>
     </header>
 
     <main>
 
         <div class="positions-grid">
 
-            <!-- 1. A SITE -->
-            <a href="t-asite.html" class="pos-card">
+            <!-- КЛІК ВЕДЕ НА ancient-b-site.html -->
+            <a href="ancient-b-site.html" class="pos-card">
                 <div class="pos-card-img-wrapper">
-                    <img src="фото/t-asite.jpg" alt="A site" onerror="this.src='фото/t-asite.png'">
+                    <img src="фото/ancient-b-site.png" alt="B Site" onerror="this.src='фото/b-stand-1.png'">
                 </div>
-                <h3 class="pos-card-title">Розкид A site</h3>
-            </a>
-
-            <!-- 2. PALACE -->
-            <a href="t-palace.html" class="pos-card">
-                <div class="pos-card-img-wrapper">
-                    <img src="фото/palace-preview.png" alt="Palace">
-                </div>
-                <h3 class="pos-card-title">Розкид Palace (Палац)</h3>
-            </a>
-
-            <!-- 3. РОЗКИД MID (БЕЗ ДУЖОК) -->
-            <a href="t-mid.html" class="pos-card">
-                <div class="pos-card-img-wrapper">
-                    <img src="фото/t-mid.png" alt="Mid">
-                </div>
-                <h3 class="pos-card-title">Розкид Mid</h3>
+                <h3 class="pos-card-title">Розкид B site</h3>
             </a>
 
         </div>

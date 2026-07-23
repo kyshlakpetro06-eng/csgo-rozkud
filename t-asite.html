@@ -3,230 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Розкидка: A Site Гайд</title>
+    <title>MIRAGE — A SITE</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Сучасний ігровий дизайн сторінки */
-        body {
-            background-color: #0a0c10;
-            color: #e6edf3;
-            font-family: 'Segoe UI', Roboto, sans-serif;
-        }
-        
-        .content-container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .site-logo {
-            font-size: 2.3rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            background: linear-gradient(135deg, #ff1e43 0%, #8b0000 35%, #1e295d 70%, #0d1117 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 0 12px rgba(220, 20, 60, 0.4));
-            margin: 0;
-        }
-
-        .section-card {
-            background: #11141d;
-            border: 1px solid #1f2438;
-            border-left: 4px solid #8b0000;
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 35px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
-        }
-
-        .section-title {
-            font-size: 1.4rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #ffffff;
-            border-bottom: 2px solid #a8102a;
-            padding-bottom: 8px;
-            margin-top: 0;
-            margin-bottom: 20px;
-            display: inline-block;
-        }
-
-        .single-img-wrapper {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .pair-grid {
-            display: flex;
-            gap: 25px;
-            margin-top: 20px;
-        }
-
-        .img-block {
-            text-align: center;
-            flex: 1; 
-            min-width: 0;
-        }
-
-        .img-block-single {
-            text-align: center;
-            width: 100%;
-            max-width: 650px;
-        }
-
-        .img-tactical {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            border: 2px solid #2a1b28;
-            box-shadow: 0 0 15px rgba(139, 0, 0, 0.2);
-            transition: all 0.3s ease;
-        }
-
-        .img-tactical:hover {
-            transform: scale(1.02);
-            border-color: #ff1e43;
-            box-shadow: 0 0 22px rgba(255, 30, 67, 0.4);
-        }
-
-        .step-subtext {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: #ff3b5c;
-            margin-top: 12px;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-        }
-
-        /* Стильна неонова плашка для Jumpthrow */
-        .jumpthrow-tag {
-            display: block;
-            font-size: 0.85rem;
-            font-weight: 800;
-            color: #ff9f43;
-            background: rgba(255, 159, 67, 0.12);
-            border: 1px solid rgba(255, 159, 67, 0.4);
-            border-radius: 4px;
-            padding: 3px 8px;
-            margin-top: 6px;
-            letter-spacing: 1px;
-        }
-
-        .tactical-note {
-            background: linear-gradient(90deg, #180b14 0%, #0d111a 100%);
-            border-left: 4px solid #ff1e43;
-            padding: 15px 20px;
-            border-radius: 0 8px 8px 0;
-            color: #a0aec0;
-            font-style: italic;
-            margin-top: 40px;
-        }
-
-        .btn-back-custom {
-            display: inline-block;
-            margin-top: 12px;
-            color: #8b9bb4;
-            text-decoration: none;
-            font-weight: 600;
-            padding: 6px 16px;
-            border: 1px solid #2d192e;
-            border-radius: 6px;
-            background: #120e17;
-            transition: all 0.2s;
-        }
-
-        .btn-back-custom:hover {
-            color: #fff;
-            border-color: #ff1e43;
-            box-shadow: 0 0 10px rgba(255, 30, 67, 0.3);
-        }
-
-        @media (max-width: 768px) {
-            .pair-grid {
-                flex-direction: column;
-                gap: 30px;
-            }
-            .site-logo {
-                font-size: 1.7rem;
-            }
-        }
-    </style>
 </head>
 <body>
-    <header style="text-align: center; margin-top: 20px; margin-bottom: 40px;">
-        <h1 class="site-logo">ІНСТРУКЦІЯ РОЗКИДКИ НА A SITE</h1>
-        <a href="t-positions.html" class="btn-back-custom">← Назад до позицій</a>
+
+    <header>
+        <a href="t-positions.html">← НАЗАД</a>
+        <h1>MIRAGE — A SITE</h1>
     </header>
 
-    <main class="content-container">
+    <main>
 
-        <!-- КРОК 1: ДЕ СТОЯТИ -->
-        <section class="section-card">
-            <h2 class="section-title">📍 Крок 1: Позиція гравця</h2>
-            <div class="single-img-wrapper">
-                <div class="img-block-single">
-                    <img src="t-asite-1-stand.png" alt="Позиція ніг біля стіни" class="img-tactical">
-                    <p class="step-subtext">Ставай тут (Притулися до стіни)</p>
+        <!-- ПІДКАЗКА ПРО «ВЕРСІЮ ДЛЯ ПК» ДЛЯ ТЕЛЕФОНІВ -->
+        <div class="desktop-tip">
+            <p>💡 <strong>Порада для телефонів:</strong> Щоб бачити сторінку точно так само, як на комп'ютері, відкрий меню браузера (3 крапки зверху) та постав галочку <strong>«Версія для комп'ютера» / «Десктопний сайт»</strong>.</p>
+        </div>
+
+        <!-- КРОК 1: ПОЗИЦІЯ ГРАВЦЯ -->
+        <div class="card">
+            <h3 class="card-title">📍 КРОК 1: ПОЗИЦІЯ ГРАВЦЯ</h3>
+            <div class="single-img" style="max-width: 420px; margin: 0 auto;">
+                <img src="фото/t-asite-1-stand.png" alt="Позиція гравця">
+                <p class="img-label">СТАВАЙ ТУТ (ПРИТУЛИСЯ ДО СТІНИ)</p>
+            </div>
+        </div>
+
+        <!-- РОЗКИДКА №1 -->
+        <div class="card">
+            <h3 class="card-title">🔥 РОЗКИДКА №1</h3>
+            <div class="grid-2">
+                <div>
+                    <img src="фото/t-asite-1-aim.png" alt="Цілься тут">
+                    <p class="img-label">🎯 ЦІЛЬСЯ ТУТ</p>
+                </div>
+                <div>
+                    <img src="фото/t-asite-1-drop.png" alt="Впаде тут">
+                    <p class="img-label">📍 ВПАДЕ ТУТ</p>
                 </div>
             </div>
-        </section>
+            <div class="jumpthrow-box">
+                <span class="jumpthrow-text">⚡ КИДОК: JUMPTHROW</span>
+            </div>
+        </div>
 
-        <!-- ПАРА №1 -->
-        <section class="section-card">
-            <h2 class="section-title">🔥 Розкидка №1</h2>
-            <div class="pair-grid">
-                <div class="img-block">
-                    <img src="t-asite-1-aim.png" alt="Приціл Варіант 1" class="img-tactical">
-                    <p class="step-subtext">🎯 Цілься тут</p>
-                    <span class="jumpthrow-tag">🚀 КИДОК: JUMPTHROW</span>
+        <!-- РОЗКИДКА №2 -->
+        <div class="card">
+            <h3 class="card-title">🔥 РОЗКИДКА №2</h3>
+            <div class="grid-2">
+                <div>
+                    <img src="фото/t-asite-2-aim.png" alt="Цілься тут">
+                    <p class="img-label">🎯 ЦІЛЬСЯ ТУТ</p>
                 </div>
-                <div class="img-block">
-                    <img src="t-asite-1-drop.png" alt="Падіння Варіант 1" class="img-tactical">
-                    <p class="step-subtext">💨 Впаде тут</p>
+                <div>
+                    <img src="фото/t-asite-2-drop.png" alt="Впаде тут">
+                    <p class="img-label">📍 ВПАДЕ ТУТ</p>
                 </div>
             </div>
-        </section>
+            <div class="jumpthrow-box">
+                <span class="jumpthrow-text">⚡ КИДОК: JUMPTHROW</span>
+            </div>
+        </div>
 
-        <!-- ПАРА №2 -->
-        <section class="section-card">
-            <h2 class="section-title">🔥 Розкидка №2</h2>
-            <div class="pair-grid">
-                <div class="img-block">
-                    <img src="t-asite-2-aim.png" alt="Приціл Варіант 2" class="img-tactical">
-                    <p class="step-subtext">🎯 Цілься тут</p>
-                    <span class="jumpthrow-tag">🚀 КИДОК: JUMPTHROW</span>
+        <!-- РОЗКИДКА №3 -->
+        <div class="card">
+            <h3 class="card-title">🔥 РОЗКИДКА №3</h3>
+            <div class="grid-2">
+                <div>
+                    <img src="фото/t-asite-3-aim.png" alt="Цілься тут">
+                    <p class="img-label">🎯 ЦІЛЬСЯ ТУТ</p>
                 </div>
-                <div class="img-block">
-                    <img src="t-asite-2-drop.png" alt="Падіння Варіант 2" class="img-tactical">
-                    <p class="step-subtext">💨 Впаде тут</p>
+                <div>
+                    <img src="фото/t-asite-3-drop.png" alt="Впаде тут">
+                    <p class="img-label">📍 ВПАДЕ ТУТ</p>
                 </div>
             </div>
-        </section>
-
-        <!-- ПАРА №3 -->
-        <section class="section-card">
-            <h2 class="section-title">🔥 Розкидка №3</h2>
-            <div class="pair-grid">
-                <div class="img-block">
-                    <img src="t-asite-3-aim.png" alt="Приціл Варіант 3" class="img-tactical">
-                    <p class="step-subtext">🎯 Цілься тут</p>
-                    <span class="jumpthrow-tag">🚀 КИДОК: JUMPTHROW</span>
-                </div>
-                <div class="img-block">
-                    <img src="t-asite-3-drop.png" alt="Падіння Варіант 3" class="img-tactical">
-                    <p class="step-subtext">💨 Впаде тут</p>
-                </div>
+            <div class="jumpthrow-box">
+                <span class="jumpthrow-text">⚡ КИДОК: JUMPTHROW</span>
             </div>
-        </section>
+        </div>
 
-        <!-- Тактична плашка -->
-        <blockquote class="tactical-note">
-            📌 <strong>Пам'ятка для команди:</strong> Наводись на приціл, натискай Jumpthrow і дивись, як граната лягає ідеально в ціль!
-        </blockquote>
+        <!-- ПАМ'ЯТКА -->
+        <div class="footer-note">
+            📌 Пам'ятка для команди: Наводись на приціл, натискай Jumpthrow і дивись, як граната лягає ідеально в ціль!
+        </div>
 
     </main>
+
 </body>
 </html>

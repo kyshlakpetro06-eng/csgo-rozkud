@@ -1,232 +1,116 @@
-/* ===================================================
-   ЗАГАЛЬНІ СТИЛІ ДЛЯ ВСЬОГО САЙТУ (DARK RED/BLUE THEME)
-   =================================================== */
-
-/* Загальний фон сторінок */
+/* Основні налаштування */
 body {
-    background-color: #0a0c10 !important; /* Глибокий вугільно-чорний */
-    color: #e6edf3 !important;
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #0d0e12;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Контейнери на всіх сторінках */
-.content-container, main {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* ---------------------------------------------------
-   КРАСИВИЙ ГРАДІЄНТ ДЛЯ ЛОГОТИПІВ ТА ГОЛОВНИХ ЗАГОЛОВКІВ
-   --------------------------------------------------- */
-h1, .site-logo, header h1 {
-    font-size: 2.2rem !important;
-    font-weight: 900 !important;
-    text-transform: uppercase !important;
-    letter-spacing: 1.5px !important;
-    text-align: center;
-    /* Градієнт: Яскраво-червоний -> Бордовий -> Темно-синій -> Чорний */
-    background: linear-gradient(135deg, #ff1e43 0%, #8b0000 35%, #1e295d 70%, #0a0c10 100%) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    filter: drop-shadow(0 0 12px rgba(220, 20, 60, 0.4));
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-/* Підзаголовки (H2, H3) */
-h2, h3 {
-    color: #ffffff !important;
-}
-
-/* ---------------------------------------------------
-   КАРТКИ, БЛОКИ ТА СЕКЦІЇ
-   --------------------------------------------------- */
-.section-card, .guide-section, .grenade-block, .position-card {
-    background: #11141d !important; /* Темно-синій нічний відтінок */
-    border: 1px solid #1f2438 !important;
-    border-left: 4px solid #8b0000 !important; /* Бордовий акцент ліворуч */
-    border-radius: 12px !important;
-    padding: 25px;
-    margin-bottom: 30px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7) !important;
-}
-
-/* Заголовки секцій */
-.section-title {
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #ffffff;
-    border-bottom: 2px solid #a8102a;
-    padding-bottom: 8px;
-    margin-top: 0;
-    margin-bottom: 20px;
-    display: inline-block;
-}
-
-/* ---------------------------------------------------
-   КНОПКИ ТА ПОСИЛАННЯ
-   --------------------------------------------------- */
-a {
-    color: #ff3b5c;
-    text-decoration: none;
-    transition: all 0.2s ease;
-}
-
-a:hover {
-    color: #ff1e43;
-}
-
-/* Кнопка "Назад" та всі універсальні кнопки */
-.btn-back, .btn, .btn-back-custom {
-    display: inline-block;
-    color: #c9d1d9 !important;
-    text-decoration: none !important;
-    font-weight: 600;
-    padding: 8px 18px;
-    border: 1px solid #2d192e !important;
-    border-radius: 6px;
-    background: #120e17 !important;
-    transition: all 0.3s ease !important;
-}
-
-.btn-back:hover, .btn:hover, .btn-back-custom:hover {
-    color: #ffffff !important;
-    border-color: #ff1e43 !important;
-    box-shadow: 0 0 12px rgba(255, 30, 67, 0.4) !important;
-    background: #1a0f1d !important;
-}
-
-/* ---------------------------------------------------
-   Зображення ТА РАМКИ
-   --------------------------------------------------- */
-img, .img-tactical, .guide-img {
-    border-radius: 8px;
-    border: 2px solid #2a1b28 !important;
-    box-shadow: 0 0 15px rgba(139, 0, 0, 0.2);
-    transition: all 0.3s ease !important;
-}
-
-img:hover, .img-tactical:hover {
-    border-color: #ff1e43 !important; /* Яскраво-червоний неон при наведенні */
-    box-shadow: 0 0 22px rgba(255, 30, 67, 0.4) !important;
-}
-
-/* ---------------------------------------------------
-   ТЕКСТОВІ /* Загальні налаштування екрану */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #1a1d24; /* Темно-сірий колір як у CS */
-    color: #ffffff;
-}
-
-.container {
-    max-width: 1000px;
-    margin: 50px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-h1 {
-    font-size: 2.5rem;
-    color: #de9b35; /* Помаранчевий колір CS */
-    letter-spacing: 2px;
-    margin-bottom: 40px;
-}
-
-/* Кнопка "Назад" */
-.btn-back {
-    display: inline-block;
-    background-color: #383e4c;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-bottom: 30px;
-}
-.btn-back:hover {
-    background-color: #4f586d;
-}
-
-/* Прибираємо стандартне підкреслення посилань */
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Розташування карток в один рядок */
-.flex-row {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-/* Стиль самої картки-кнопки */
-.card {
-    background-color: #262b36;
-    border: 3px solid #3e4556;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.2s, border-color 0.2s;
-    width: 260px;
-}
-
-/* Головну мапу робимо трохи більшою */
-.map-link .card {
-    width: 400px;
-}
-
-/* Ефект при наведенні мишкою */
-.card:hover {
-    transform: scale(1.04);
-    border-color: #de9b35; /* Підсвічується помаранчевим */
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-    display: block;
-    min-height: 160px;
-    background-color: #333; /* Сіре тло, поки немає твоїх картинок */
-}
-
-.card-label {
-    background-color: rgba(22, 25, 32, 0.9);
-    padding: 15px;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.guide-box {
-    background-color: #262b36;
-    border: 2px dashed #de9b35;
-    padding: 50px;
-    border-radius: 8px;
-    font-size: 1.2rem;
-}ВКАЗІВКИ ТА ПРИМІТКИ
-   --------------------------------------------------- */
-.step-subtext {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #ff3b5c !important; /* Червоно-ігровий акцент */
-    margin-top: 12px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-}
-
-.tactical-note, blockquote {
-    background: linear-gradient(90deg, #180b14 0%, #0d111a 100%) !important;
-    border-left: 4px solid #ff1e43 !important;
+/* Шапка */
+header {
+    background-color: #14161d;
     padding: 15px 20px;
-    border-radius: 0 8px 8px 0;
-    color: #a0aec0 !important;
-    font-style: italic;
+    border-bottom: 2px solid #ff4655;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 20px;
+    color: #ff4655;
+    letter-spacing: 1px;
+}
+
+header a {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    background: #232733;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+header a:hover {
+    background: #ff4655;
+}
+
+/* Основний контейнер */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+/* Картки блоків */
+.card {
+    background: #14161d;
+    border: 1px solid #232733;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    color: #ff4655;
+    margin-top: 0;
+    font-size: 16px;
+    border-bottom: 1px solid #232733;
+    padding-bottom: 8px;
+}
+
+/* Сітка для фотографій */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.grid-2 img, .single-img img {
+    width: 100%;
+    border-radius: 6px;
+    display: block;
+}
+
+.img-label {
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+/* Плашка Jumpthrow */
+.jumpthrow-box {
+    background: #ff4655;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+/* Порада для телефонів */
+.desktop-tip {
+    background: #1a1d28;
+    border-left: 4px solid #ff4655;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+/* Нижнє примітка */
+.footer-note {
+    text-align: center;
+    color: #888;
+    font-size: 13px;
     margin-top: 30px;
 }

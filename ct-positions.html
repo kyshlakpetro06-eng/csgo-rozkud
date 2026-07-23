@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIRAGE — Т ПОЗИЦІЇ</title>
+    <title>MIRAGE — CT ПОЗИЦІЇ</title>
     <link rel="stylesheet" href="style.css">
     <style>
         .positions-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 350px));
+            justify-content: center;
             gap: 20px;
-            max-width: 1100px;
+            max-width: 850px;
             margin: 30px auto;
             padding: 0 15px;
         }
@@ -52,9 +53,9 @@
         }
 
         .pos-card:hover {
-            border-color: #ff4655;
+            border-color: #4b69ff;
             transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(255, 70, 85, 0.2);
+            box-shadow: 0 8px 20px rgba(75, 105, 255, 0.25);
         }
 
         .pos-card:hover img {
@@ -62,7 +63,7 @@
         }
 
         .pos-card:hover .pos-card-title {
-            color: #ff4655;
+            color: #4b69ff;
         }
     </style>
 </head>
@@ -70,35 +71,27 @@
 
     <header>
         <a href="side.html">← НАЗАД</a>
-        <h1>MIRAGE — Т ПОЗИЦІЇ</h1>
+        <h1>MIRAGE — CT ПОЗИЦІЇ</h1>
     </header>
 
     <main>
 
         <div class="positions-grid">
 
-            <!-- 1. A SITE -->
-            <a href="t-asite.html" class="pos-card">
+            <!-- 1. ONE WAY PIT [A] -->
+            <a href="ct-smoke-pit.html" class="pos-card">
                 <div class="pos-card-img-wrapper">
-                    <img src="фото/t-asite.jpg" alt="A site" onerror="this.src='фото/t-asite.png'">
+                    <img src="фото/ct-smoke-pit.png" alt="One Way Pit" onerror="this.src='фото/ct-smoke-pit.jpg'">
                 </div>
-                <h3 class="pos-card-title">Розкид A site</h3>
+                <h3 class="pos-card-title">One Way у Pit з проходом [A]</h3>
             </a>
 
-            <!-- 2. PALACE -->
-            <a href="t-palace.html" class="pos-card">
+            <!-- 2. МОМЕНТАЛКА ПІД ТІММЕЙТА [B] -->
+            <a href="ct-flash-apps-b.html" class="pos-card">
                 <div class="pos-card-img-wrapper">
-                    <img src="фото/palace-preview.png" alt="Palace">
+                    <img src="фото/ct-flash-apps-b.png" alt="Flash Apps B" onerror="this.src='фото/ct-flash-apps-b.jpg'">
                 </div>
-                <h3 class="pos-card-title">Розкид Palace (Палац)</h3>
-            </a>
-
-            <!-- 3. РОЗКИД MID (БЕЗ ДУЖОК) -->
-            <a href="t-mid.html" class="pos-card">
-                <div class="pos-card-img-wrapper">
-                    <img src="фото/t-mid.png" alt="Mid">
-                </div>
-                <h3 class="pos-card-title">Розкид Mid</h3>
+                <h3 class="pos-card-title">Моменталка під пік Тіммейту в Apps [B]</h3>
             </a>
 
         </div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIRAGE — СТОРОНА</title>
+    <title>ANCIENT — СТОРОНА</title>
     <link rel="stylesheet" href="style.css">
     <style>
         .sides-grid {
@@ -43,30 +43,42 @@
         .side-card-title {
             padding: 15px;
             text-align: center;
-            color: #4b69ff; /* Синій колір для КТ */
+            color: #ff4655;
             font-weight: bold;
             font-size: 16px;
             margin: 0;
             background: #14161d;
         }
 
-        .side-card.t-side .side-card-title {
-            color: #ff4655; /* Червоний колір для Т */
-        }
-
+        /* 💥 АНІМАЦІЯ ПРИ НАВЕДЕННІ */
         .side-card:hover {
-            border-color: #4b69ff;
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(75, 105, 255, 0.2);
-        }
-
-        .side-card.t-side:hover {
             border-color: #ff4655;
+            transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(255, 70, 85, 0.2);
         }
 
         .side-card:hover img {
             transform: scale(1.08);
+        }
+
+        /* Неактивний CT */
+        .side-card.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .side-card.disabled:hover {
+            border-color: #232733;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .side-card.disabled:hover img {
+            transform: none;
+        }
+
+        .side-card.disabled .side-card-title {
+            color: #888;
         }
     </style>
 </head>
@@ -74,28 +86,28 @@
 
     <header>
         <a href="index.html">← НАЗАД</a>
-        <h1>MIRAGE</h1>
+        <h1>ANCIENT</h1>
     </header>
 
     <main>
 
         <div class="sides-grid">
 
-            <!-- ТЕРОРИСТИ -->
-            <a href="t-positions.html" class="side-card t-side">
+            <!-- ВЕДЕ НА ancient-t-side.html -->
+            <a href="ancient-t-side.html" class="side-card">
                 <div class="side-card-img-wrapper">
                     <img src="фото/t-side.jpg" alt="Terrorists" onerror="this.src='фото/t-side.png'">
                 </div>
                 <h3 class="side-card-title">Terrorists (T)</h3>
             </a>
 
-            <!-- КОНТРТЕРОРИСТИ (ТЕПЕР АКТИВНІ!) -->
-            <a href="ct-positions.html" class="side-card">
+            <!-- СТ (СКОРО) -->
+            <div class="side-card disabled">
                 <div class="side-card-img-wrapper">
-                    <img src="фото/ct-side.jpg" alt="Counter-Terrorists" onerror="this.src='фото/ct-side.png'">
+                    <img src="фото/ct-side.jpg" alt="CT" onerror="this.src='фото/ct-side.png'">
                 </div>
-                <h3 class="side-card-title">Counter-Terrorists (CT)</h3>
-            </a>
+                <h3 class="side-card-title">CT (Скоро)</h3>
+            </div>
 
         </div>
 
